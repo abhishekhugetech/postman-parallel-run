@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "36fe960f-040c-4a28-995c-4842c8d1d06d",
+		"name": "Gotenberg testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24676442"
+	},
+	"item": [
+		{
+			"name": "Convert URL to PDF Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/abhishekkumarsingh/Downloads/header.html"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/abhishekkumarsingh/Downloads/footer.html"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/abhishekkumarsingh/Downloads/index.html"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dev-cluster.finbox.in/wkhtmltopdf/pdf",
+					"protocol": "https",
+					"host": [
+						"dev-cluster",
+						"finbox",
+						"in"
+					],
+					"path": [
+						"wkhtmltopdf",
+						"pdf"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://gateway.finbox.in/gotenberg-8-5-1/forms/chromium/convert/url' \\\n--header 'Authorization: ' \\\n--form 'url=\"https://lendingmiddlewaredev.s3.ap-south-1.amazonaws.com/kshitiz/prod_agreement_images_removed.html?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRjBEAiAGgwYuPTWkB95YKGNmTTmB2%2F%2FEqbEVjoYQXgDhaH%2BwKgIgINnTztaIUJHyLITKNeRIOSWPWw%2Fi09dR02tLoLy5YG8q1gQIof%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgw5MDk3OTgyOTcwMzAiDH%2BClkTx09hwnALncCqqBOcXlADgb4g8cJGLp2dZkJPzfRlKO54lDU2ICYpzMO9Xy0n9%2FswilqOkl%2FYD81jy2IVtBScHDZyUb6kXmb0X%2FTpAI4a1lreYpoTVRHm1zOKSnQOxVuVclkHOba9Hc2hbgQuf8Lr%2FgF5q%2F4rZnCJ%2BSG7dQDt8ngiINmS%2BXgGqNGPtEzparR0E8No5Lv%2F9sza4njZkfYDsXrJ3ZtUsYoIC%2FdIeMeH9UoUfA9gn722XU5HgGw%2F%2F6OeyfGWi8ZEc44Eq9wJM%2BRHSyITa9bhZnZw%2FRoFtw67%2FqHUeuaCnKdu7WlhEzaTuA4pWbg0lr1oxE%2BU1lU20LDCHRYEHoR%2FdtvNBOO6WjhJAMZLUUpQD50AY0JcAqb2F%2FBG6o93U%2Fq1rVN8fS9NaZFKrJX77YJdF7A%2FPVNhqVcbqBxOXpaWWW9JRBp6Lipw9VgnEFZVk9kNqXEYQ5qaVJol0zZA4Mlpzhdgi2BipWHfsA%2FDgKLktbOn%2FB%2B3533Ta5zJTvobosR9Cz7WwmLe1vWNTuLPwJcw9lVxNIG9%2BNh7ASeqLZm%2BFzBylgmqYMqttByqPWxIdgGVsh0GZMif4IunaN8xmCR%2F78jqej1Zk5O3BABgP3JIGeyC8rE0DNFQ%2BXIgGAjorWvBGR7l%2B8O7NhULDyqlA1ayhzI34b4eIyNnRCT9MHGtV%2F4kjxPmX01aNRONnxSksm1cu0ED5DPMu6jG94XGEvuQxclKegdr7BUWIls%2BzY86yMJGdzrsGOsYCj3hAYHZOh8DEr6wzvldwKKTnHYxPvqGSeFWrJ4tijvF2OdDU%2FpMenNL5un9%2F4X6Nk3%2BsHKs209kYv5Ma7r7b9X3w%2BcCrNmNUIfdI8dpmyuyWimeE4yVUMJWtgPj%2BtSNGLFRi47lXOZKk0fZ7n6UhEmZb6ul0Atl%2BDRG%2BqHAKArjxu3uYkRgt%2FAKesWIc1QcLK9gjpNvLk%2B8S5CjqgWZw8ZkuBI0eqjMc8AcfloT%2FJQoE1oZxx3T5177pha8DCP0hLyw8faIqh7VJM1b77IxASbSn92o3osqsyMFsRgqb%2BkjC54%2FhCC622hwq2LbWKTA9tFVkfoRHqAWMM72UDKO5RKdTo8TmasB5qz1JJEIHOWqBVeH5guSBXFAgeHvlp9xyqcRgCmpMMcICKg6KBkWOhqfOf8dEF6uhypGz81bWsHih%2BJXkd80%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA5HVBUJXDJPX4WZQK%2F20241231%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20241231T080151Z&X-Amz-Expires=43200&X-Amz-SignedHeaders=host&X-Amz-Signature=16cd3f93c909e87e83076a89269aae6749449df0df1d74fdbf6828be7e5129d1\"'\n\n\n\n\n\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Convert URL to PDF Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/abhishekkumarsingh/Downloads/header.html"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/abhishekkumarsingh/Downloads/footer.html"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/abhishekkumarsingh/Downloads/index.html"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dev-cluster.finbox.in/wkhtmltopdf/pdf",
+					"protocol": "https",
+					"host": [
+						"dev-cluster",
+						"finbox",
+						"in"
+					],
+					"path": [
+						"wkhtmltopdf",
+						"pdf"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://gateway.finbox.in/gotenberg-8-5-1/forms/chromium/convert/url' \\\n--header 'Authorization: ' \\\n--form 'url=\"https://lendingmiddlewaredev.s3.ap-south-1.amazonaws.com/kshitiz/prod_agreement_images_removed.html?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRjBEAiAGgwYuPTWkB95YKGNmTTmB2%2F%2FEqbEVjoYQXgDhaH%2BwKgIgINnTztaIUJHyLITKNeRIOSWPWw%2Fi09dR02tLoLy5YG8q1gQIof%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgw5MDk3OTgyOTcwMzAiDH%2BClkTx09hwnALncCqqBOcXlADgb4g8cJGLp2dZkJPzfRlKO54lDU2ICYpzMO9Xy0n9%2FswilqOkl%2FYD81jy2IVtBScHDZyUb6kXmb0X%2FTpAI4a1lreYpoTVRHm1zOKSnQOxVuVclkHOba9Hc2hbgQuf8Lr%2FgF5q%2F4rZnCJ%2BSG7dQDt8ngiINmS%2BXgGqNGPtEzparR0E8No5Lv%2F9sza4njZkfYDsXrJ3ZtUsYoIC%2FdIeMeH9UoUfA9gn722XU5HgGw%2F%2F6OeyfGWi8ZEc44Eq9wJM%2BRHSyITa9bhZnZw%2FRoFtw67%2FqHUeuaCnKdu7WlhEzaTuA4pWbg0lr1oxE%2BU1lU20LDCHRYEHoR%2FdtvNBOO6WjhJAMZLUUpQD50AY0JcAqb2F%2FBG6o93U%2Fq1rVN8fS9NaZFKrJX77YJdF7A%2FPVNhqVcbqBxOXpaWWW9JRBp6Lipw9VgnEFZVk9kNqXEYQ5qaVJol0zZA4Mlpzhdgi2BipWHfsA%2FDgKLktbOn%2FB%2B3533Ta5zJTvobosR9Cz7WwmLe1vWNTuLPwJcw9lVxNIG9%2BNh7ASeqLZm%2BFzBylgmqYMqttByqPWxIdgGVsh0GZMif4IunaN8xmCR%2F78jqej1Zk5O3BABgP3JIGeyC8rE0DNFQ%2BXIgGAjorWvBGR7l%2B8O7NhULDyqlA1ayhzI34b4eIyNnRCT9MHGtV%2F4kjxPmX01aNRONnxSksm1cu0ED5DPMu6jG94XGEvuQxclKegdr7BUWIls%2BzY86yMJGdzrsGOsYCj3hAYHZOh8DEr6wzvldwKKTnHYxPvqGSeFWrJ4tijvF2OdDU%2FpMenNL5un9%2F4X6Nk3%2BsHKs209kYv5Ma7r7b9X3w%2BcCrNmNUIfdI8dpmyuyWimeE4yVUMJWtgPj%2BtSNGLFRi47lXOZKk0fZ7n6UhEmZb6ul0Atl%2BDRG%2BqHAKArjxu3uYkRgt%2FAKesWIc1QcLK9gjpNvLk%2B8S5CjqgWZw8ZkuBI0eqjMc8AcfloT%2FJQoE1oZxx3T5177pha8DCP0hLyw8faIqh7VJM1b77IxASbSn92o3osqsyMFsRgqb%2BkjC54%2FhCC622hwq2LbWKTA9tFVkfoRHqAWMM72UDKO5RKdTo8TmasB5qz1JJEIHOWqBVeH5guSBXFAgeHvlp9xyqcRgCmpMMcICKg6KBkWOhqfOf8dEF6uhypGz81bWsHih%2BJXkd80%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA5HVBUJXDJPX4WZQK%2F20241231%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20241231T080151Z&X-Amz-Expires=43200&X-Amz-SignedHeaders=host&X-Amz-Signature=16cd3f93c909e87e83076a89269aae6749449df0df1d74fdbf6828be7e5129d1\"'\n\n\n\n\n\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Convert URL to PDF Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/abhishekkumarsingh/Downloads/header.html"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/abhishekkumarsingh/Downloads/footer.html"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/abhishekkumarsingh/Downloads/index.html"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dev-cluster.finbox.in/wkhtmltopdf/pdf",
+					"protocol": "https",
+					"host": [
+						"dev-cluster",
+						"finbox",
+						"in"
+					],
+					"path": [
+						"wkhtmltopdf",
+						"pdf"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://gateway.finbox.in/gotenberg-8-5-1/forms/chromium/convert/url' \\\n--header 'Authorization: ' \\\n--form 'url=\"https://lendingmiddlewaredev.s3.ap-south-1.amazonaws.com/kshitiz/prod_agreement_images_removed.html?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRjBEAiAGgwYuPTWkB95YKGNmTTmB2%2F%2FEqbEVjoYQXgDhaH%2BwKgIgINnTztaIUJHyLITKNeRIOSWPWw%2Fi09dR02tLoLy5YG8q1gQIof%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgw5MDk3OTgyOTcwMzAiDH%2BClkTx09hwnALncCqqBOcXlADgb4g8cJGLp2dZkJPzfRlKO54lDU2ICYpzMO9Xy0n9%2FswilqOkl%2FYD81jy2IVtBScHDZyUb6kXmb0X%2FTpAI4a1lreYpoTVRHm1zOKSnQOxVuVclkHOba9Hc2hbgQuf8Lr%2FgF5q%2F4rZnCJ%2BSG7dQDt8ngiINmS%2BXgGqNGPtEzparR0E8No5Lv%2F9sza4njZkfYDsXrJ3ZtUsYoIC%2FdIeMeH9UoUfA9gn722XU5HgGw%2F%2F6OeyfGWi8ZEc44Eq9wJM%2BRHSyITa9bhZnZw%2FRoFtw67%2FqHUeuaCnKdu7WlhEzaTuA4pWbg0lr1oxE%2BU1lU20LDCHRYEHoR%2FdtvNBOO6WjhJAMZLUUpQD50AY0JcAqb2F%2FBG6o93U%2Fq1rVN8fS9NaZFKrJX77YJdF7A%2FPVNhqVcbqBxOXpaWWW9JRBp6Lipw9VgnEFZVk9kNqXEYQ5qaVJol0zZA4Mlpzhdgi2BipWHfsA%2FDgKLktbOn%2FB%2B3533Ta5zJTvobosR9Cz7WwmLe1vWNTuLPwJcw9lVxNIG9%2BNh7ASeqLZm%2BFzBylgmqYMqttByqPWxIdgGVsh0GZMif4IunaN8xmCR%2F78jqej1Zk5O3BABgP3JIGeyC8rE0DNFQ%2BXIgGAjorWvBGR7l%2B8O7NhULDyqlA1ayhzI34b4eIyNnRCT9MHGtV%2F4kjxPmX01aNRONnxSksm1cu0ED5DPMu6jG94XGEvuQxclKegdr7BUWIls%2BzY86yMJGdzrsGOsYCj3hAYHZOh8DEr6wzvldwKKTnHYxPvqGSeFWrJ4tijvF2OdDU%2FpMenNL5un9%2F4X6Nk3%2BsHKs209kYv5Ma7r7b9X3w%2BcCrNmNUIfdI8dpmyuyWimeE4yVUMJWtgPj%2BtSNGLFRi47lXOZKk0fZ7n6UhEmZb6ul0Atl%2BDRG%2BqHAKArjxu3uYkRgt%2FAKesWIc1QcLK9gjpNvLk%2B8S5CjqgWZw8ZkuBI0eqjMc8AcfloT%2FJQoE1oZxx3T5177pha8DCP0hLyw8faIqh7VJM1b77IxASbSn92o3osqsyMFsRgqb%2BkjC54%2FhCC622hwq2LbWKTA9tFVkfoRHqAWMM72UDKO5RKdTo8TmasB5qz1JJEIHOWqBVeH5guSBXFAgeHvlp9xyqcRgCmpMMcICKg6KBkWOhqfOf8dEF6uhypGz81bWsHih%2BJXkd80%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA5HVBUJXDJPX4WZQK%2F20241231%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20241231T080151Z&X-Amz-Expires=43200&X-Amz-SignedHeaders=host&X-Amz-Signature=16cd3f93c909e87e83076a89269aae6749449df0df1d74fdbf6828be7e5129d1\"'\n\n\n\n\n\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Convert URL to PDF Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/abhishekkumarsingh/Downloads/header.html"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/abhishekkumarsingh/Downloads/footer.html"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/abhishekkumarsingh/Downloads/index.html"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://dev-cluster.finbox.in/wkhtmltopdf/pdf",
+					"protocol": "https",
+					"host": [
+						"dev-cluster",
+						"finbox",
+						"in"
+					],
+					"path": [
+						"wkhtmltopdf",
+						"pdf"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://gateway.finbox.in/gotenberg-8-5-1/forms/chromium/convert/url' \\\n--header 'Authorization: ' \\\n--form 'url=\"https://lendingmiddlewaredev.s3.ap-south-1.amazonaws.com/kshitiz/prod_agreement_images_removed.html?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEMj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRjBEAiAGgwYuPTWkB95YKGNmTTmB2%2F%2FEqbEVjoYQXgDhaH%2BwKgIgINnTztaIUJHyLITKNeRIOSWPWw%2Fi09dR02tLoLy5YG8q1gQIof%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARADGgw5MDk3OTgyOTcwMzAiDH%2BClkTx09hwnALncCqqBOcXlADgb4g8cJGLp2dZkJPzfRlKO54lDU2ICYpzMO9Xy0n9%2FswilqOkl%2FYD81jy2IVtBScHDZyUb6kXmb0X%2FTpAI4a1lreYpoTVRHm1zOKSnQOxVuVclkHOba9Hc2hbgQuf8Lr%2FgF5q%2F4rZnCJ%2BSG7dQDt8ngiINmS%2BXgGqNGPtEzparR0E8No5Lv%2F9sza4njZkfYDsXrJ3ZtUsYoIC%2FdIeMeH9UoUfA9gn722XU5HgGw%2F%2F6OeyfGWi8ZEc44Eq9wJM%2BRHSyITa9bhZnZw%2FRoFtw67%2FqHUeuaCnKdu7WlhEzaTuA4pWbg0lr1oxE%2BU1lU20LDCHRYEHoR%2FdtvNBOO6WjhJAMZLUUpQD50AY0JcAqb2F%2FBG6o93U%2Fq1rVN8fS9NaZFKrJX77YJdF7A%2FPVNhqVcbqBxOXpaWWW9JRBp6Lipw9VgnEFZVk9kNqXEYQ5qaVJol0zZA4Mlpzhdgi2BipWHfsA%2FDgKLktbOn%2FB%2B3533Ta5zJTvobosR9Cz7WwmLe1vWNTuLPwJcw9lVxNIG9%2BNh7ASeqLZm%2BFzBylgmqYMqttByqPWxIdgGVsh0GZMif4IunaN8xmCR%2F78jqej1Zk5O3BABgP3JIGeyC8rE0DNFQ%2BXIgGAjorWvBGR7l%2B8O7NhULDyqlA1ayhzI34b4eIyNnRCT9MHGtV%2F4kjxPmX01aNRONnxSksm1cu0ED5DPMu6jG94XGEvuQxclKegdr7BUWIls%2BzY86yMJGdzrsGOsYCj3hAYHZOh8DEr6wzvldwKKTnHYxPvqGSeFWrJ4tijvF2OdDU%2FpMenNL5un9%2F4X6Nk3%2BsHKs209kYv5Ma7r7b9X3w%2BcCrNmNUIfdI8dpmyuyWimeE4yVUMJWtgPj%2BtSNGLFRi47lXOZKk0fZ7n6UhEmZb6ul0Atl%2BDRG%2BqHAKArjxu3uYkRgt%2FAKesWIc1QcLK9gjpNvLk%2B8S5CjqgWZw8ZkuBI0eqjMc8AcfloT%2FJQoE1oZxx3T5177pha8DCP0hLyw8faIqh7VJM1b77IxASbSn92o3osqsyMFsRgqb%2BkjC54%2FhCC622hwq2LbWKTA9tFVkfoRHqAWMM72UDKO5RKdTo8TmasB5qz1JJEIHOWqBVeH5guSBXFAgeHvlp9xyqcRgCmpMMcICKg6KBkWOhqfOf8dEF6uhypGz81bWsHih%2BJXkd80%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA5HVBUJXDJPX4WZQK%2F20241231%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20241231T080151Z&X-Amz-Expires=43200&X-Amz-SignedHeaders=host&X-Amz-Signature=16cd3f93c909e87e83076a89269aae6749449df0df1d74fdbf6828be7e5129d1\"'\n\n\n\n\n\n\n"
+			},
+			"response": []
+		}
+	]
+}

@@ -2,10 +2,11 @@ const path = require('path')
 const async = require('async')
 const newman = require('newman')
 
-const PARALLEL_RUN_COUNT = 2
+const PARALLEL_RUN_COUNT = 1
 
 const parametersForTestRun = {
-    collection: path.join(__dirname, 'postman/postman_collection_open_source.json'), // your collection
+    // collection: path.join(__dirname, 'postman/Gotenberg testing.postman_collection gotenberg.json'), // your collection
+    collection: path.join(__dirname, 'postman/Gotenberg testing.postman_collection.json'), // your collection
     reporters: 'cli'
 };
 
